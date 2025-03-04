@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lịch Học</title>
+<style>
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 10px; border: 1px solid #ddd; text-align: center; }
+th { background-color: #4CAF50; color: white; }
+td.empty { background-color: #f0f0f0; }
+.subject { color: #fff; font-weight: bold; }
+.lunch-break { background-color: #f39c12; color: white; font-weight: bold; }
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    color: #333;
+}
+
+.schedule-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #4CAF50;
+    margin: 5px 0px 0px 0px;
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.schedule-table thead th {
+    background-color: #4CAF50;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.schedule-table tbody td {
+    border: 1px solid #ddd;
+    height: 40px;
+    vertical-align: middle;
+}
+
+.schedule-table td.empty {
+    background-color: #f9f9f9;
+}
+
+.schedule-table td.subject {
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.lunch-break {
+    background-color: #FFD700;
+    color: black;
+    font-style: italic;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    .schedule-container {
+        padding: 10px;
+    }
+    .schedule-table thead th,
+    .schedule-table tbody td {
+        font-size: 12px;
+    }
+}
+</style>
+</head>
+<body>
+<div class="schedule-container">
+<h1>Thời khóa biểu Bách Khoa Đà Nẵng</h1>
+<table class="schedule-table">
+<thead>
+<tr>
+<th>Thời gian</th>
+<th>Thứ 2</th>
+<th>Thứ 3</th>
+<th>Thứ 4</th>
+<th>Thứ 5</th>
+<th>Thứ 6</th>
+<th>Thứ 7</th>
+<th>Chủ nhật</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>7:00 - 7:50</td>
+<td id="Thứ 2-1" class="empty"></td>
+<td id="Thứ 3-1" class="empty"></td>
+<td id="Thứ 4-1" class="empty"></td>
+<td id="Thứ 5-1" class="empty"></td>
+<td id="Thứ 6-1" class="empty"></td>
+<td id="Thứ 7-1" class="empty"></td>
+<td id="Chủ Nhật-1" class="empty"></td>
+</tr>
+<tr>
+<td>8:00 - 8:50</td>
+<td id="Thứ 2-2" class="empty"></td>
+<td id="Thứ 3-2" class="empty"></td>
+<td id="Thứ 4-2" class="empty"></td>
+<td id="Thứ 5-2" class="empty"></td>
+<td id="Thứ 6-2" class="empty"></td>
+<td id="Thứ 7-2" class="empty"></td>
+<td id="Chủ Nhật-2" class="empty"></td>
+</tr>
+<tr>
+<td>9:00 - 9:50</td>
+<td id="Thứ 2-3" class="empty"></td>
+<td id="Thứ 3-3" class="empty"></td>
+<td id="Thứ 4-3" class="empty"></td>
+<td id="Thứ 5-3" class="empty"></td>
+<td id="Thứ 6-3" class="empty"></td>
+<td id="Thứ 7-3" class="empty"></td>
+<td id="Chủ Nhật-3" class="empty"></td>
+</tr>
+<tr>
+<td>10:00 - 10:50</td>
+<td id="Thứ 2-4" class="empty"></td>
+<td id="Thứ 3-4" class="empty"></td>
+<td id="Thứ 4-4" class="empty"></td>
+<td id="Thứ 5-4" class="empty"></td>
+<td id="Thứ 6-4" class="empty"></td>
+<td id="Thứ 7-4" class="empty"></td>
+<td id="Chủ Nhật-4" class="empty"></td>
+</tr>
+<tr>
+<td>11:00 - 11:50</td>
+<td id="Thứ 2-5" class="empty"></td>
+<td id="Thứ 3-5" class="empty"></td>
+<td id="Thứ 4-5" class="empty"></td>
+<td id="Thứ 5-5" class="empty"></td>
+<td id="Thứ 6-5" class="empty"></td>
+<td id="Thứ 7-5" class="empty"></td>
+<td id="Chủ Nhật-5" class="empty"></td>
+</tr>
+<tr>
+<td>12:30 - 13:20</td>
+<td id="Thứ 2-6" class="empty"></td>
+<td id="Thứ 3-6" class="empty"></td>
+<td id="Thứ 4-6" class="empty"></td>
+<td id="Thứ 5-6" class="empty"></td>
+<td id="Thứ 6-6" class="empty"></td>
+<td id="Thứ 7-6" class="empty"></td>
+<td id="Chủ Nhật-6" class="empty"></td>
+</tr>
+<tr>
+<td>13:30 - 14:20</td>
+<td id="Thứ 2-7" class="empty"></td>
+<td id="Thứ 3-7" class="empty"></td>
+<td id="Thứ 4-7" class="empty"></td>
+<td id="Thứ 5-7" class="empty"></td>
+<td id="Thứ 6-7" class="empty"></td>
+<td id="Thứ 7-7" class="empty"></td>
+<td id="Chủ Nhật-7" class="empty"></td>
+</tr>
+<tr>
+<td>14:30 - 15:20</td>
+<td id="Thứ 2-8" class="empty"></td>
+<td id="Thứ 3-8" class="empty"></td>
+<td id="Thứ 4-8" class="empty"></td>
+<td id="Thứ 5-8" class="empty"></td>
+<td id="Thứ 6-8" class="empty"></td>
+<td id="Thứ 7-8" class="empty"></td>
+<td id="Chủ Nhật-8" class="empty"></td>
+</tr>
+<tr>
+<td>15:30 - 16:20</td>
+<td id="Thứ 2-9" class="empty"></td>
+<td id="Thứ 3-9" class="empty"></td>
+<td id="Thứ 4-9" class="empty"></td>
+<td id="Thứ 5-9" class="empty"></td>
+<td id="Thứ 6-9" class="empty"></td>
+<td id="Thứ 7-9" class="empty"></td>
+<td id="Chủ Nhật-9" class="empty"></td>
+</tr>
+<tr>
+<td>16:30 - 17:20</td>
+<td id="Thứ 2-10" class="empty"></td>
+<td id="Thứ 3-10" class="empty"></td>
+<td id="Thứ 4-10" class="empty"></td>
+<td id="Thứ 5-10" class="empty"></td>
+<td id="Thứ 6-10" class="empty"></td>
+<td id="Thứ 7-10" class="empty"></td>
+<td id="Chủ Nhật-10" class="empty"></td>
+</tr>
+</tbody>
+<div style="font-size: 12px; color: gray; text-align: right;">
+	© <a href="https://github.com/chinh-de" target="_blank" style="color: inherit; text-decoration: none; margin-bottom: 5px;">chinhde</a>
+</div></table>
+</div>
+<script>
+window.onload = function() {
+  const scheduleData = [
+    { name: 'Khai phá dữ liệu Web', day: 'Thứ 5', startPeriod: 1, endPeriod: 4, room: 'B303', teacher: 'Trương Ngọc Châu', color: '#FFC300' },
+    { name: 'Khoa học dữ liệu', day: 'Thứ 6', startPeriod: 3, endPeriod: 5, room: 'F403', teacher: 'Phạm Công Thắng', color: '#DAF7A6' },
+    { name: 'Lập trình Python', day: 'Thứ 3', startPeriod: 8, endPeriod: 9, room: 'F407', teacher: 'Trương Ngọc Châu', color: '#FF8D1A' },
+    { name: 'PBL 5: Dự án Kỹ thuật máy tính', day: 'Thứ 4', startPeriod: 8, endPeriod: 10, room: 'E406', teacher: 'Ninh Khánh Duy', color: '#AED6F1' },
+    { name: 'Quản lý dự án CNTT', day: 'Thứ 2', startPeriod: 6, endPeriod: 7, room: 'E301A', teacher: 'Trịnh Công Duy', color: '#F5B7B1' },
+    { name: 'Trí tuệ nhân tạo', day: 'Thứ 2', startPeriod: 2, endPeriod: 4, room: 'F208', teacher: 'Đào Duy Tuấn', color: '#D7BDE2' },
+    { name: 'Vi điều khiển', day: 'Thứ 2', startPeriod: 8, endPeriod: 9, room: 'E301A', teacher: 'Bùi Thị Thanh Thanh', color: '#A3E4D7' },
+  ];
+  scheduleData.forEach(function(schedule) {
+    period = schedule.startPeriod;
+      const cellId = schedule.day + '-' + period;
+      const cell = document.getElementById(cellId);
+      if (cell) {
+        cell.innerHTML = schedule.name + '<br>' + schedule.room + '<br>' + schedule.teacher;
+        cell.style.backgroundColor = schedule.color;
+        // Set rowspan for the first cell of the subject
+        if (period === schedule.startPeriod) {
+          cell.setAttribute('rowspan', schedule.endPeriod - schedule.startPeriod + 1);
+          for (let i = schedule.startPeriod + 1; i <= schedule.endPeriod; i++) {
+            const nextCellId = schedule.day + '-' + i;
+            const nextCell = document.getElementById(nextCellId);
+            if (nextCell) {
+            nextCell.style.display = 'none'; // Hide the subsequent cells
+            }
+        }             }
+      }
+  });
+};
+</script>
+</body>
+</html>

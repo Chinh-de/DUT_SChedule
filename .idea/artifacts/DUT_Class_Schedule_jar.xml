@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="DUT_Class_Schedule:jar">
+    <output-path>$PROJECT_DIR$/..</output-path>
+    <root id="archive" name="DUT_Class_Schedule.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="DUT_Class_Schedule" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../Lib/jsoup-1.18.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/netbeans/external/AbsoluteLayout/RELEASE220/AbsoluteLayout-RELEASE220.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
